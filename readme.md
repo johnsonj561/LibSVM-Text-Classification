@@ -15,7 +15,7 @@ iv) mapping class labels to integer values
 v) writing documents to appropriate output values in the form label term-idx:tfidf term-idx:tfidf ... \n  
 
 ### Procedure
-1. Define project parameters in config.sh  
+1. Define project parameters in [config.sh]   
 FORMAT_DATA:  python script that will convert data into LibSVM format  
 TRAIN_DOCS: file containing training data  
 TEST_DOCS: file containing test data  
@@ -25,7 +25,7 @@ LIBSVM_MODEL: file containing LibSVM model, by default LibSVM writes model to LI
 PREDICTION_RESULTS: file where LibSVM will write the test data predictions  
 
 2. Execute main.sh  
-main.sh will utilize the file definitions in config.sh to:  
+[main.sh] will utilize the file definitions in [config.sh] to:  
 i) convert data to LibSVM format  
 ii) train a SVM classificaton model using training data with linear kernel function  
 iii) predict classification labels for the test data using model trained in part ii    
@@ -37,3 +37,5 @@ v) print classification accuracy to the console
 Accuracy = 90.616% (1265/1396) (classification)  
 
 [prepare-data.py]:preprocessing/prepare-data.py
+[main.sh]:main.sh
+[config.sh]:config.sh
